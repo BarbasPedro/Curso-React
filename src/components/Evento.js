@@ -1,13 +1,19 @@
-const Evento = ({numero}) => {
+import Button from './evento/Button'
 
-  const meuEvento = () => {
-    console.log(`"Opa! Fui ativado", ${numero}`)
+const Evento = () => {
+  const primeiroEvento = () => {
+    console.log("Opa! Ativando meu primeiro evento!")
+  }
+
+  const segundoEvento = () => {
+    console.log("Agora ativei o segundo evento!")
   }
 
   return (
     <>
       <p>Clique para disparar um evento</p>
-      <button onClick={meuEvento}>Ativar</button>
+      <Button evento={primeiroEvento} text="Primeiro evento" />
+      <Button evento={segundoEvento} text="Segundo evento" />
     </>
   )
 }

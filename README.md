@@ -1,2 +1,2 @@
 # Curso React
- Curso de React - Matheis Battisti
+ Curso de React - Matheus Battisti
